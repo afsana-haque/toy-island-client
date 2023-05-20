@@ -1,11 +1,16 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import GallerySection from '../GallerySection/GallerySection';
+import Toy from '../Toy/Toy';
+import SubCategory from '../SubCategory/SubCategory';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <h2>This is Home</h2>
+            <GallerySection></GallerySection>
+            <SubCategory></SubCategory>
+            <Toy></Toy>
         </div>
     );
 };
