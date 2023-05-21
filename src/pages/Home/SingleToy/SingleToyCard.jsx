@@ -9,7 +9,7 @@ const SingleToyCard = ({ singleToy }) => {
                 <h2 className="card-title">{name}</h2>
                 <p> Seller Name: {seller}</p>
                 <p> Seller email: {email}</p>
-                <p> Price: {price}</p>
+                <p> Price: ${price}</p>
                 <p> Rating: {rating}</p>
                 <p> Quantity: {quantity}</p>
                 <p> Description: {description}</p>

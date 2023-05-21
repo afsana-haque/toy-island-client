@@ -10,7 +10,7 @@ const SubCategoryCard = ({barbi}) => {
             <figure><img src={picture} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>
-                <p>Price: {price}</p>
+                <p>Price: ${price}</p>
                 <p>Rating: {rating}</p>
                 <div className="card-actions justify-end">
                     <Link to="/allToy">
