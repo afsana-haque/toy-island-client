@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import SingleToyCard from './SingleToyCard';
+
 
 const SingleToy = () => {
     const { id } = useParams();
@@ -25,7 +25,7 @@ const SingleToy = () => {
                     <figure><img src={picture} alt="Album" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">{name}</h2>
-                        <p> Seller Name: {seller}</p>
+                        <h4> Seller Name: {seller}</h4>
                         <p> Seller email: {email}</p>
                         <p> Price: ${price}</p>
                         <p> Rating: {rating}</p>
