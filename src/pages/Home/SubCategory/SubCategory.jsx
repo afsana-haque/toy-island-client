@@ -32,6 +32,7 @@ const SubCategory = () => {
     },[])
     return (
         <div className='my-24'>
+            <h2 className='text-3xl font-bold text-center'>Shop by category</h2>
             <Tabs>
                 <TabList>
                     <Tab>Barbie Doll</Tab>
