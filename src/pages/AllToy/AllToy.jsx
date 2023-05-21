@@ -1,17 +1,24 @@
 
 import React, { useContext, useEffect, useState } from 'react';
 import AllToyTable from './AllToyTable';
+import { useNavigate } from 'react-router-dom';
 
 
 const AllToy = () => {
   const [allToys, setAllToys] = useState([]);
-
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('https://toy-island-server.vercel.app/allToy',)
     .then(res => res.json())
     .then(data => {
-      setAllToys(data)
+    
+      if(!data.error){
+        setAllToys(data)
+    }
+    else{
+        navigate('/');
+    }
     })
   },[])
   
