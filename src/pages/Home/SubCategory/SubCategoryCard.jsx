@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SubCategoryCard = ({barbi}) => {
 
@@ -12,7 +13,9 @@ const SubCategoryCard = ({barbi}) => {
                 <p>Price: {price}</p>
                 <p>Rating: {rating}</p>
                 <div className="card-actions justify-end">
+                    <Link to="/allToy">
                     <button className="btn btn-primary">View Details</button>
+                    </Link>
                 </div>
             </div>
         </div>
