@@ -12,7 +12,7 @@ const AllToyTable = ({ allToy }) => {
                 <td>{price}</td>
                 <td>{quantity}</td>
                 <td><Link to={`/singleToy/${_id}`}>
-                <button className='btn btn-info'>View Details</button>
+                <button className='btn btn-info text-white'>View Details</button>
                 </Link></td>
             </tr>
 

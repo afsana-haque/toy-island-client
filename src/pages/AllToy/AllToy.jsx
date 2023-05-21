@@ -1,9 +1,11 @@
-import { data } from 'autoprefixer';
-import React, { useEffect, useState } from 'react';
+
+import React, { useContext, useEffect, useState } from 'react';
 import AllToyTable from './AllToyTable';
+
 
 const AllToy = () => {
   const [allToys, setAllToys] = useState([]);
+
 
   useEffect(() => {
     fetch('https://toy-island-server.vercel.app/allToy',)
