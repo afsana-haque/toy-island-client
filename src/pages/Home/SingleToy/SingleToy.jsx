@@ -1,4 +1,4 @@
-import { data } from 'autoprefixer';
+
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import SingleToyCard from './SingleToyCard';
@@ -13,6 +13,7 @@ const SingleToy = () => {
         .then(res => res.json())
         .then(data => {
             setSingleToys(data);
+            console.log(setSingleToys)
         })
     },[])
     return (
