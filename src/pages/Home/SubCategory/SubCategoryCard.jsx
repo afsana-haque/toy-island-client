@@ -1,14 +1,18 @@
 import React from 'react';
 
-const SubCategoryCard = () => {
+const SubCategoryCard = ({barbi}) => {
+
+    const {name, picture,price,rating } = barbi;
+
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div className="card w-96 bg-base-100 shadow-xl my-6">
+            <figure><img src={picture} alt="Shoes" /></figure>
             <div className="card-body">
-                <h2 className="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 className="card-title">{name}</h2>
+                <p>Price: {price}</p>
+                <p>Rating: {rating}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <button className="btn btn-primary">View Details</button>
                 </div>
             </div>
         </div>
